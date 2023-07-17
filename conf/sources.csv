@@ -1,2 +1,3 @@
 app,local,source
 awesomewm,/home/gonzalo/.config/awesome/rc.lua,/etc/xdg/awesome/rc.lua
+bash,/home/gonzalo/.bashrc,/etc/skel/.bashrc
