@@ -16,16 +16,16 @@ To add files:
 dotfiles add -f <file>
 ```
 
-Use git normally with files in `conf`.
+Use git normally with files in `conf` folder.
 
 ## Commit messages format
 
 `action(app): message`
 
- - action:
+- action:
   - config: Configuratios.
   - update: Update from upstream files in conf/sources.csv.
   - refactor: Changes in structure not affecting configuration.
- - app: awesomewm, gtk, xterm ...
- - message: text.
+- app: awesomewm, gtk, xterm ...
+- message: text.
 
