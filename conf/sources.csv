@@ -1,2 +1,2 @@
 app,local,source
-awesomewm,/etc/xdg/awesome/rc.lua,/home/gonzalo/.config/awesome/rc.lua
+awesomewm,/home/gonzalo/.config/awesome/rc.lua,/etc/xdg/awesome/rc.lua
