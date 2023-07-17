@@ -12,6 +12,13 @@ dotfiles() {
 
 To install switch to a branch (`git switch blue`) and run commands in `conf/Install.md`.
 
+To update pull new changes, run new commands in `conf/Install.md` and copy changes in configuration files (run rest with sudo to copy changes in files not in home directory).
+
+```bash
+git pull
+dotfiles reset --hard
+```
+
 To commit files:
 
 ```bash
