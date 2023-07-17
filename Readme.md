@@ -1,8 +1,8 @@
 # Dotfiles
 
-## Use
+## Usage
 
-Define this function
+Define this function:
 
 ```bash
 dotfiles() {
@@ -10,10 +10,11 @@ dotfiles() {
 }
 ```
 
-To add files:
+To commit files:
 
 ```bash
 dotfiles add -f <file>
+dotfiles commit
 ```
 
 Use git normally with files in `conf` folder.
