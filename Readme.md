@@ -10,6 +10,8 @@ dotfiles() {
 }
 ```
 
+To install switch to a branch (`git switch blue`) and run commands in `conf/Install.md`.
+
 To commit files:
 
 ```bash
