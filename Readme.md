@@ -27,7 +27,7 @@ Use git normally with files in `conf` folder.
 
 - action:
   - config: Configuratios.
-  - update: Update from upstream files in conf/sources.csv.
+  - update: Update from upstream files in `conf/sources.csv`.
   - refactor: Changes in structure not affecting configuration.
 - app: awesomewm, gtk, xterm ...
 - message: text.
