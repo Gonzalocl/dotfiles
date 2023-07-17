@@ -45,10 +45,11 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init(gears.filesystem.get_themes_dir() .. "sky/theme.lua")
+beautiful.wallpaper = gears.filesystem.get_configuration_dir() .. "background.jpg"
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
+terminal = "urxvt"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -61,19 +62,9 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.floating,
     awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
     awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
-    awful.layout.suit.corner.nw,
+    awful.layout.suit.floating,
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
@@ -97,6 +88,56 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
 
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
                                      menu = mymainmenu })
+
+local shortcut_apps_list = {
+  "Google Maps",
+  "YouTube Music",
+  "Android Studio",
+  "VLC media player",
+  "Peek",
+  "Telegram Desktop",
+  "Google Earth",
+  "Google Chrome",
+  "Discord",
+  "Zoom",
+  "Screenshot",
+  "LibreOffice",
+  "Gmail",
+  "Meld",
+  "PulseAudio Volume Control",
+  "NVIDIA X Server Settings",
+  "UXTerm",
+  "Galculator",
+  "PyCharm Community Edition",
+  "WhatsApp",
+  "Skype",
+  "GNU Image Manipulation Program",
+  "RSIBreak",
+  "PyCharm Professional Edition",
+  "RStudio",
+  "Audacity",
+  "Cheese",
+  "Nemo",
+  "Advanced Network Configuration",
+  "Text Editor"
+}
+local shortcut_apps = wibox.layout.fixed.horizontal()
+menubar.menu_gen.generate(function(entries)
+  filelog = io.open("/tmp/awesomewm_app_list", "a")
+  for _, app in pairs(entries) do
+    if app.icon == nil then
+      filelog:write(app.name.."//"..app.cmdline.."//"..type(app.icon).."\n")
+    else
+      filelog:write(app.name.."//"..app.cmdline.."//"..app.icon.."\n")
+    end
+    for _, shortcut_app in pairs(shortcut_apps_list) do
+      if shortcut_app == app.name then
+        shortcut_apps:add(awful.widget.launcher({ command = app.cmdline, image = app.icon}))
+      end
+    end
+  end
+  filelog:close()
+end)
 
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
@@ -205,6 +246,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mylauncher,
             s.mytaglist,
+            shortcut_apps,
             s.mypromptbox,
         },
         s.mytasklist, -- Middle widget
@@ -486,11 +528,11 @@ awful.rules.rules = {
           "ConfigManager",  -- Thunderbird's about:config.
           "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
         }
-      }, properties = { floating = true }},
+      }, properties = { floating = false }},
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = true }
+      }, properties = { titlebars_enabled = false }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
