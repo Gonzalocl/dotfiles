@@ -30,7 +30,3 @@ RET_COLOR="${COLOR_YELLOW}"
 
 PS1="${RET_COLOR}[${USER_COLOR}\u${RET_COLOR}@${HOST_COLOR}\h${COLOR_RESET} ${PWD_COLOR}\W${RET_COLOR}]\$${COLOR_RESET} "
 
-dotfiles() {
-  git -C / --git-dir="$PWD/.git" "$@"
-}
-
