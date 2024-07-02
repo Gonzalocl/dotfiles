@@ -1,0 +1,10 @@
+[user]
+	name = Gonzalo Caparrós Laiz
+	email = gonzalocl1024@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
+	autocrlf = input
+[diff]
+	tool = meld
