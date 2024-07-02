@@ -1,2 +1,4 @@
 
 nm-applet &
+
+volumeicon -d hw:1 &
