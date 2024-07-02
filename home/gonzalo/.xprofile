@@ -5,5 +5,7 @@ volumeicon -d hw:1 &
 
 cbatticon &
 
+(sleep 2; picom -cC -f -t 0 -l 0 -r 3 -m 0.85 -b) &
+
 # for barrier and xdotool to work right
 setxkbmap
