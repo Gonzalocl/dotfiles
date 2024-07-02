@@ -4,3 +4,6 @@ nm-applet &
 volumeicon -d hw:1 &
 
 cbatticon &
+
+# for barrier and xdotool to work right
+setxkbmap
