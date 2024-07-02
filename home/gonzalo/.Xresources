@@ -1,0 +1,8 @@
+xterm*font:     *-fixed-*-*-*-18-*
+
+xterm*background: black
+xterm*foreground: gray
+
+XTerm*faceName: x:fixed,xft:Bitstream Vera Sans Mono
+
+
