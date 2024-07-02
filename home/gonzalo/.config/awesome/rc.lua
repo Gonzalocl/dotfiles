@@ -49,7 +49,7 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "sky/theme.lua")
 beautiful.wallpaper = gears.filesystem.get_configuration_dir() .. "background.jpg"
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvt"
+terminal = "uxterm"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
