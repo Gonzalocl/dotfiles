@@ -2,33 +2,21 @@
 
 ## Usage
 
-Define this function:
+There is a branch for each host, this repo uses yadm.
 
 ```bash
-dotfiles() {
-  git -C / --git-dir="$PWD/.git" "$@"
-}
+yadm clone -w / -b blue git@github.com:Gonzalocl/dotfiles.git
 ```
 
-To install switch to a branch (`git switch blue`) and run commands in `conf/Install.md`.
+To update system files:
 
-To update pull new changes, run new commands in `conf/Install.md` and copy changes in configuration files (run rest with sudo to copy changes in files not in home directory).
-
-```bash
-git pull
-dotfiles reset --hard
+```
+yadm reset
+sudo yadm --yadm-repo /home/gonzalo/.local/share/yadm/repo.git checkout /
+sudo chown gonzalo:gonzalo /home/gonzalo/.local/share/yadm/repo.git/index
 ```
 
-To commit files:
-
-```bash
-dotfiles add -f <file>
-dotfiles commit
-```
-
-Use git normally with files in `conf` folder.
-
-## Commit messages format
+## Commit format
 
 `action(app): message`
 
