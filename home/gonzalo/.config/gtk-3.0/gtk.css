@@ -1,4 +1,5 @@
 decoration {
+    /* Remove gtk apps borders */
     padding: 0;
 }
 
