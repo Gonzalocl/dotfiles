@@ -13,7 +13,8 @@ To update system files:
 ```
 yadm reset
 sudo yadm --yadm-repo /home/gonzalo/.local/share/yadm/repo.git checkout /
-sudo chown gonzalo:gonzalo /home/gonzalo/.local/share/yadm/repo.git/index
+sudo yadm --yadm-repo /home/gonzalo/.local/share/yadm/repo.git merge origin/blue
+sudo chown -R gonzalo:gonzalo /home/gonzalo/.local/share/yadm/repo.git/
 ```
 
 ## Commit format
