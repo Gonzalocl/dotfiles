@@ -1,0 +1,10 @@
+Defaults env_reset, editor=/usr/bin/rvim, !env_editor, insults
+
+gonzalo ALL=(ALL:ALL) ALL
+
+gonzalo ALL= NOPASSWD: /usr/bin/poweroff,/usr/bin/reboot
+gonzalo ALL= NOPASSWD: /usr/bin/pacman -Syu
+gonzalo ALL= NOPASSWD: /usr/bin/paccache -rk0
+gonzalo ALL= NOPASSWD: /usr/bin/systemctl start vncserver@\:4
+gonzalo ALL= NOPASSWD: /usr/bin/systemctl stop vncserver@\:4
+
