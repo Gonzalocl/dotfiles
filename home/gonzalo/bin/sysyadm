@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if (( EUID != 0)); then
+  echo Needs to be run as root
+  exit
+fi
+
+mv /etc/.git /etc/hidden.git
+
+yadm --yadm-dir /home/gonzalo/.config/yadm --yadm-data /home/gonzalo/.local/share/yadm "$@"
+
+mv /etc/hidden.git /etc/.git
+
+chown -R gonzalo:gonzalo /home/gonzalo/.local/share/yadm/repo.git
