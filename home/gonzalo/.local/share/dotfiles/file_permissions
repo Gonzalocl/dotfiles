@@ -1,5 +1,6 @@
 0755 root root 'etc'
 0750 root root 'etc/sudoers.d'
+0440 root root 'etc/sudoers.d/20_sudo_config'
 0755 root root 'home'
 0700 gonzalo gonzalo 'home/gonzalo'
 0644 gonzalo gonzalo 'home/gonzalo/.bashrc'
