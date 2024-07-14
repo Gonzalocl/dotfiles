@@ -1,5 +1,5 @@
 [User]
 Session=
 XSession=awesome
-Icon=/home/gonzalo/.face
+Icon=/var/lib/AccountsService/icons/gonzalo.jpg
 SystemAccount=false

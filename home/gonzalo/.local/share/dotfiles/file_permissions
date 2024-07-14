@@ -30,5 +30,7 @@
 0755 root root 'var'
 0755 root root 'var/lib'
 0775 root root 'var/lib/AccountsService'
+0775 root root 'var/lib/AccountsService/icons'
+0644 root root 'var/lib/AccountsService/icons/gonzalo.jpg'
 0700 root root 'var/lib/AccountsService/users'
 0600 root root 'var/lib/AccountsService/users/gonzalo'
