@@ -2,6 +2,7 @@
 0755 root root 'etc/lightdm'
 0644 root root 'etc/lightdm/lightdm.conf'
 0644 root root 'etc/lightdm/lightdm-webkit2-greeter.conf'
+0644 root root 'etc/locale.conf'
 0644 root root 'etc/locale.gen'
 0750 root root 'etc/sudoers.d'
 0440 root root 'etc/sudoers.d/20_sudo_config'
