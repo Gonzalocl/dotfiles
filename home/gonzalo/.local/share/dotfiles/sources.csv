@@ -3,3 +3,4 @@ awesomewm,/home/gonzalo/.config/awesome/rc.lua,/etc/xdg/awesome/rc.lua
 bash,/home/gonzalo/.bashrc,/etc/skel/.bashrc
 picom,/home/gonzalo/.config/picom/picom.conf,https://gitlab.archlinux.org/archlinux/packaging/packages/picom/-/blob/4aa1f2db8f50fa4a7b38f272d757c8b2fdc4cb53/picom.conf
 google-chrome,/home/gonzalo/.local/share/applications/google-chrome-incognito.desktop,/usr/share/applications/google-chrome.desktop
+telegram,/home/gonzalo/.local/share/applications/org.telegram.desktop.desktop,/usr/share/applications/org.telegram.desktop.desktop
