@@ -8,3 +8,5 @@
 	autocrlf = input
 [diff]
 	tool = meld
+[push]
+	autoSetupRemote = true
