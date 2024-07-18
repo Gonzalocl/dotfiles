@@ -7,5 +7,7 @@ cbatticon &
 
 (sleep 2; picom -c -f -t 0 -l 0 -r 3 -m 0.85 -b) &
 
+sxhkd &
+
 # for barrier and xdotool to work right
 setxkbmap
