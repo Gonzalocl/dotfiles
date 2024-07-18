@@ -1,0 +1,12 @@
+
+Print
+    ksnip
+
+super + s
+    ksnip -r
+
+super + shift + s
+    ksnip -ls
+
+super + shift + a
+    ksnip -fs
