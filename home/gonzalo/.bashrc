@@ -10,6 +10,7 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 alias ll="ls -lah"
+alias pactree='pactree -c'
 
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/gedit
