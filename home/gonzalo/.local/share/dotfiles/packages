@@ -5,5 +5,9 @@ lightdm
 lightdm-webkit2-greeter
 lightdm-webkit-theme-litarvan
 
+nemo
+nemo-fileroller
+baobab
+
 sxhkd
 ksnip

@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Baobab
+Comment=Run Baobab on %F
+Exec=baobab %F
+Icon-Name=org.gnome.baobab
+Selection=s
+Extensions=dir;
+Dependencies=baobab;
