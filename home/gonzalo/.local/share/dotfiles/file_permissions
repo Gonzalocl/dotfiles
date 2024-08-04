@@ -11,7 +11,6 @@
 0700 gonzalo gonzalo 'home/gonzalo'
 0644 gonzalo gonzalo 'home/gonzalo/.bashrc'
 0755 gonzalo gonzalo 'home/gonzalo/bin'
-0755 gonzalo gonzalo 'home/gonzalo/bin/7z_extract'
 0755 gonzalo gonzalo 'home/gonzalo/bin/date_format'
 0755 gonzalo gonzalo 'home/gonzalo/bin/datetime_format'
 0755 gonzalo gonzalo 'home/gonzalo/bin/store_file_permissions'
