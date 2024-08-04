@@ -1,9 +1,5 @@
 #!/bin/bash
 
-sudo mv /etc/.git /etc/hidden.git
-
 sudo yadm --yadm-dir /home/gonzalo/.config/yadm --yadm-data /home/gonzalo/.local/share/yadm "$@"
-
-sudo mv /etc/hidden.git /etc/.git
 
 sudo chown -R gonzalo:gonzalo /home/gonzalo/.local/share/yadm/repo.git
