@@ -1,9 +1,16 @@
 pacman-contrib
 pkgfile
 
+bash
+bash-completion
+xterm
+
 lightdm
 lightdm-webkit2-greeter
 lightdm-webkit-theme-litarvan
+
+awesome
+picom
 
 pasystray
 
@@ -11,5 +18,15 @@ nemo
 nemo-fileroller
 baobab
 
+git
+gitg
+
+networkmanager
+nm-connection-editor
+network-manager-applet
+
 sxhkd
 ksnip
+cbatticon
+yadm
+sudo
