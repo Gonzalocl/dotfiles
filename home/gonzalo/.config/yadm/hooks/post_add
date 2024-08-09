@@ -1,0 +1,40 @@
+#!/bin/bash
+
+DOTFILES_PERMISSIONS_FILE="/home/gonzalo/.local/share/dotfiles/file_permissions"
+
+if [[ $YADM_END_RECURSION ]]; then
+  exit 0
+fi
+
+yadm --yadm-dir "$YADM_HOOK_DIR" --yadm-data "$YADM_HOOK_DATA" status -z --no-renames 2>/dev/null |
+  grep -z -v -e '^ ' -e '^D' |
+  cut -z -c 4- |
+  xargs -0 -r stat --format='%#a %U %G %N' |
+  sort -k 4 -u -o "$DOTFILES_PERMISSIONS_FILE" - "$DOTFILES_PERMISSIONS_FILE"
+
+file_index=$(mktemp)
+
+cut -d ' ' -f 4- "$DOTFILES_PERMISSIONS_FILE" |
+  tr '\n' '\0' |
+  xargs -0 -r -I {} bash -c 'echo -ne {}"\0"' >"$file_index"
+
+yadm --yadm-dir "$YADM_HOOK_DIR" --yadm-data "$YADM_HOOK_DATA" status -z --no-renames 2>/dev/null |
+  grep -z '^D' |
+  cut -z -c 4- |
+  while read -r -d $'\0' l; do
+    i=1
+    while read -r -d $'\0' f; do
+      if [[ $l == "$f" ]]; then
+        echo $i
+        continue
+      fi
+      ((i++))
+    done <"$file_index"
+  done |
+  tr '\n' 'x' |
+  sed 's/x/d;/g' |
+  xargs -r -I {} sed -i '{}' "$DOTFILES_PERMISSIONS_FILE"
+
+rm -f "$file_index"
+
+YADM_END_RECURSION=1 yadm --yadm-dir "$YADM_HOOK_DIR" --yadm-data "$YADM_HOOK_DATA" add "$DOTFILES_PERMISSIONS_FILE"
