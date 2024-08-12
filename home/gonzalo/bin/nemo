@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if (($#)); then
+  /usr/bin/nemo "$@" &
+else
+  /usr/bin/nemo . &
+fi
