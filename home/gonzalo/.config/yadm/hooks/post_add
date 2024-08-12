@@ -9,6 +9,7 @@ fi
 yadm --yadm-dir "$YADM_HOOK_DIR" --yadm-data "$YADM_HOOK_DATA" status -z --no-renames 2>/dev/null |
   grep -z -v -e '^ ' -e '^D' |
   cut -z -c 4- |
+  list-files-and-dirs |
   xargs -0 -r stat --format='%#a %U %G %N' |
   sort -k 4 -u -o "$DOTFILES_PERMISSIONS_FILE" - "$DOTFILES_PERMISSIONS_FILE"
 
