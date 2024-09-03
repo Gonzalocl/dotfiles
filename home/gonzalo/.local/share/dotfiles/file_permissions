@@ -21,6 +21,7 @@
 0644 gonzalo gonzalo 'home/gonzalo/.config/awesome/background.jpg'
 0644 gonzalo gonzalo 'home/gonzalo/.config/awesome/rc.lua'
 0700 gonzalo gonzalo 'home/gonzalo/.config/gtk-3.0'
+0644 gonzalo gonzalo 'home/gonzalo/.config/gtk-3.0/bookmarks'
 0644 gonzalo gonzalo 'home/gonzalo/.config/gtk-3.0/gtk.css'
 0644 gonzalo gonzalo 'home/gonzalo/.config/gtk-3.0/settings.ini'
 0755 gonzalo gonzalo 'home/gonzalo/.config/ksnip'
