@@ -65,6 +65,7 @@ mesa
 lib32-mesa
 xpra
 slock
+xautomation
 
 # AUR
 google-chrome

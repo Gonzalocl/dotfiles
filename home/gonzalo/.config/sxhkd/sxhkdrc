@@ -13,3 +13,6 @@ super + shift + a
 
 super + l
     slock
+
+super + d
+    xte "keyup Super_L" ; sleep 0.1 ; xte "str "`date_format` ; xte "keydown Super_L"
