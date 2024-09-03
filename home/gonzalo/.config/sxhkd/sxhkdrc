@@ -10,3 +10,6 @@ super + shift + s
 
 super + shift + a
     ksnip -fs
+
+super + l
+    slock
