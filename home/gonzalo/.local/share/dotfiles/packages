@@ -68,6 +68,7 @@ slock
 xautomation
 ## Command gdk-pixbuf-thumbnailer
 gdk-pixbuf2
+ffmpegthumbnailer
 ## Command notify-send
 libnotify
 xclip
