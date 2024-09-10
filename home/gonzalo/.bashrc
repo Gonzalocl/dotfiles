@@ -12,12 +12,6 @@ PS1='[\u@\h \W]\$ '
 alias ll="ls -lah"
 alias pactree='pactree -c'
 
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/gedit
-export DIFFPROG=/usr/bin/meld
-export BROWSER=/usr/bin/google-chrome-stable
-export PATH="$HOME/bin:$PATH"
-
 HISTCONTROL=ignoredups
 HISTSIZE=20000
 HISTTIMEFORMAT="%F %T "

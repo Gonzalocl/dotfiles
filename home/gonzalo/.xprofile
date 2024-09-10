@@ -1,5 +1,4 @@
-# Make file selection dialog windows use gtk
-export QT_QPA_PLATFORMTHEME=gtk3
+source .env
 
 nm-applet &
 

@@ -33,6 +33,7 @@
 0755 gonzalo gonzalo 'home/gonzalo/.config/yadm'
 0755 gonzalo gonzalo 'home/gonzalo/.config/yadm/hooks'
 0755 gonzalo gonzalo 'home/gonzalo/.config/yadm/hooks/post_add'
+0644 gonzalo gonzalo 'home/gonzalo/.env'
 0644 gonzalo gonzalo 'home/gonzalo/.gitconfig'
 0755 gonzalo gonzalo 'home/gonzalo/.icons'
 0755 gonzalo gonzalo 'home/gonzalo/.icons/default'
