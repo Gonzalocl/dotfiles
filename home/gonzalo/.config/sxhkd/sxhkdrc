@@ -15,4 +15,7 @@ super + l
     slock
 
 super + d
-    xte "keyup Super_L" ; sleep 0.1 ; xte "str "`date_format` ; xte "keydown Super_L"
+    date_format | xclip -i && xte "mouseclick 2"
+
+super + shift + d
+    datetime_format | xclip -i && xte "mouseclick 2"
