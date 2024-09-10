@@ -66,6 +66,12 @@ lib32-mesa
 xpra
 slock
 xautomation
+## Command gdk-pixbuf-thumbnailer
+gdk-pixbuf2
+## Command notify-send
+libnotify
+xclip
+xdg-utils
 
 # AUR
 google-chrome

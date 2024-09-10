@@ -6,10 +6,10 @@ super + s
     ksnip -r
 
 super + shift + s
-    ksnip -ls
+    screenshot last-selection
 
 super + shift + a
-    ksnip -fs
+    screenshot
 
 super + l
     slock
