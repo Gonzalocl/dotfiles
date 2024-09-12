@@ -15,7 +15,7 @@ super + l
     slock
 
 super + d
-    date_format | xclip -i && xte "mouseclick 2"
+    date_format | xclip -i -r && xte "mouseclick 2"
 
 super + shift + d
-    datetime_format | xclip -i && xte "mouseclick 2"
+    datetime_format | xclip -i -r && xte "mouseclick 2"
