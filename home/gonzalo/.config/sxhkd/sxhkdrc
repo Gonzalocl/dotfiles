@@ -2,7 +2,7 @@ Print
     ksnip
 
 super + s
-    ksnip -r
+    screenshot selection
 
 super + shift + s
     screenshot last-selection
