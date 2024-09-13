@@ -76,6 +76,7 @@ xdg-utils
 totem
 ## Codecs for totem
 gst-libav
+gthumb
 
 # AUR
 google-chrome
