@@ -1,0 +1,11 @@
+[Default Applications]
+image/bmp=org.gnome.eog.desktop
+image/jpeg=org.gnome.eog.desktop
+image/png=org.gnome.eog.desktop
+image/svg+xml=org.gnome.eog.desktop
+
+[Added Associations]
+image/bmp=org.gnome.eog.desktop;
+image/jpeg=org.gnome.eog.desktop;
+image/png=org.gnome.eog.desktop;
+image/svg+xml=org.gnome.eog.desktop;
