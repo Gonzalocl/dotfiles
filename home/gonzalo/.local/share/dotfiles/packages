@@ -73,6 +73,9 @@ ffmpegthumbnailer
 libnotify
 xclip
 xdg-utils
+totem
+## Codecs for totem
+gst-libav
 
 # AUR
 google-chrome
