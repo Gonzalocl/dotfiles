@@ -1,11 +1,37 @@
 [Default Applications]
+application/pdf=google-chrome.desktop
+application/vnd.efi.iso=org.gnome.FileRoller.desktop
+application/x-shellscript=org.gnome.gedit.desktop
+application/xml=org.gnome.gedit.desktop
 image/bmp=org.gnome.eog.desktop
+image/gif=org.gnome.eog.desktop
 image/jpeg=org.gnome.eog.desktop
 image/png=org.gnome.eog.desktop
 image/svg+xml=org.gnome.eog.desktop
+image/webp=org.gnome.eog.desktop
+text/csv=org.gnome.gedit.desktop
+text/markdown=org.gnome.gedit.desktop
+text/plain=org.gnome.gedit.desktop
+text/x-csrc=org.gnome.gedit.desktop
+video/mp4=org.gnome.Totem.desktop
+video/quicktime=org.gnome.Totem.desktop
+video/vnd.avi=org.gnome.Totem.desktop
 
 [Added Associations]
+application/pdf=google-chrome.desktop;
+application/vnd.efi.iso=org.gnome.FileRoller.desktop;
+application/x-shellscript=org.gnome.gedit.desktop;
+application/xml=org.gnome.gedit.desktop;
 image/bmp=org.gnome.eog.desktop;
+image/gif=org.gnome.eog.desktop;
 image/jpeg=org.gnome.eog.desktop;
 image/png=org.gnome.eog.desktop;
 image/svg+xml=org.gnome.eog.desktop;
+image/webp=org.gnome.eog.desktop;
+text/csv=org.gnome.gedit.desktop;
+text/markdown=org.gnome.gedit.desktop;
+text/plain=org.gnome.gedit.desktop;
+text/x-csrc=org.gnome.gedit.desktop;
+video/mp4=org.gnome.Totem.desktop;
+video/quicktime=org.gnome.Totem.desktop;
+video/vnd.avi=org.gnome.Totem.desktop;
