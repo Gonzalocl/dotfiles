@@ -66,6 +66,10 @@ video/webm=org.gnome.Totem.desktop
 video/x-flv=org.gnome.Totem.desktop
 video/x-matroska=org.gnome.Totem.desktop
 video/x-ms-wmv=org.gnome.Totem.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
 
 [Added Associations]
 application/gpx+xml=google-earth-pro.desktop;
