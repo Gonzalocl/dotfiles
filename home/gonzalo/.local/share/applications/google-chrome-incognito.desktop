@@ -1,13 +1,13 @@
 [Desktop Entry]
 Version=1.0
-Name=Google Chrome incognito window
-Name[en_GB]=Google Chrome incognito window
-Name[es]=Google Chrome ventana de incógnito
+Name=Google Chrome Incognito Window
+Name[en_GB]=Google Chrome Incognito Window
+Name[es]=Google Chrome Ventana de Incógnito
 StartupWMClass=Google-chrome
-Exec=/usr/bin/google-chrome-stable --incognito
+Exec=/usr/bin/google-chrome-stable --incognito %U
 StartupNotify=true
 Terminal=false
-Icon=google-chrome
+Icon=google-chrome-incognito
 Type=Application
 Categories=Network;WebBrowser;
 MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
