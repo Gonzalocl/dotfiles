@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Xkill
+Comment[es]=Cierra una aplicación gráfica
+Comment=Kill a client by its X resource
+Keywords[es]=cierra;ventana;
+Keywords=kill;close;window;
+Exec=xkill
+Terminal=false
+Type=Application
+Icon=pirate-icon
+Categories=Utility;

@@ -47,6 +47,7 @@
 0755 gonzalo gonzalo 'home/gonzalo/.local/share/applications'
 0755 gonzalo gonzalo 'home/gonzalo/.local/share/applications/google-chrome-incognito.desktop'
 0755 gonzalo gonzalo 'home/gonzalo/.local/share/applications/meld-diff-patch.desktop'
+0755 gonzalo gonzalo 'home/gonzalo/.local/share/applications/xkill.desktop'
 0755 gonzalo gonzalo 'home/gonzalo/.local/share/dotfiles'
 0644 gonzalo gonzalo 'home/gonzalo/.local/share/dotfiles/file_permissions'
 0644 gonzalo gonzalo 'home/gonzalo/.local/share/dotfiles/Install.md'
