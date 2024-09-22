@@ -11,6 +11,7 @@ PS1='[\u@\h \W]\$ '
 
 alias ll="ls -lah"
 alias pactree='pactree -c'
+alias diff='diff --color'
 
 HISTCONTROL=ignoredups
 HISTSIZE=20000
