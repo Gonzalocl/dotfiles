@@ -66,8 +66,9 @@ lib32-mesa
 xpra
 slock
 xautomation
-## Command gdk-pixbuf-thumbnailer
+## Command gdk-pixbuf-thumbnailer for thumbnail script
 gdk-pixbuf2
+## Thumbnails for Nemo
 ffmpegthumbnailer
 ## Command notify-send
 libnotify
@@ -76,10 +77,14 @@ xdg-utils
 totem
 ## Codecs for totem
 gst-libav
+## Codecs for totem
+gst-plugins-ugly
 gthumb
 okteta
+ghex
 strawberry
 rhythmbox
+transmission-gtk
 patchutils
 xorg-xkill
 
@@ -89,3 +94,4 @@ google-earth-pro
 lib32-nvidia-470xx-utils
 nvidia-470xx-settings
 nvidia-470xx-utils
+gnome-directory-thumbnailer
