@@ -1,0 +1,5 @@
+#!/bin/bash
+
+meld \
+  <(filterdiff --format=unified "$1" | grep '^-\|^ \|^@' | cut -c 2-) \
+  <(filterdiff --format=unified "$1" | grep '^+\|^ \|^@' | cut -c 2-)
