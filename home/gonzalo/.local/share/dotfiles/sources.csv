@@ -5,3 +5,4 @@ picom,home/gonzalo/.config/picom/picom.conf,https://gitlab.archlinux.org/archlin
 google-chrome,home/gonzalo/.local/share/applications/google-chrome-incognito.desktop,/usr/share/applications/google-chrome.desktop
 google-chrome,home/gonzalo/.local/share/icons/google-chrome-incognito.svg,"Open incognito tab, inspect element and save image."
 meld,home/gonzalo/.local/share/applications/meld-diff-patch.desktop,/usr/share/applications/org.gnome.Meld.desktop
+xkill,home/gonzalo/.local/share/icons/pirate-icon.svg,https://download.kde.org/stable/plasma/6.1.5/breeze-6.1.5.tar.xz:breeze-6.1.5/cursors/Breeze/src/cursors.svg
