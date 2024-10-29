@@ -1,4 +1,6 @@
 0755 root root 'etc'
+0755 root root 'etc/binfmt.d'
+0644 root root 'etc/binfmt.d/executable-jar.conf'
 0755 root root 'etc/lightdm'
 0644 root root 'etc/lightdm/lightdm.conf'
 0644 root root 'etc/lightdm/lightdm-webkit2-greeter.conf'
