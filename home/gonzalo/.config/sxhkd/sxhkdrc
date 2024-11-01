@@ -1,19 +1,16 @@
 Print
     ksnip
 
-super + s
-    screenshot selection
+super + a
+    echo
 
-super + shift + s
-    screenshot last-selection
-
-super + shift + a
-    screenshot
+super + {_, shift + } {s, a}
+    screenshot {selection, } {last-selection, }
 
 super + l
     slock
 
-super {_, shift + } d
+super + {_, shift + } d
     {date_format, datetime_format} | head -c -1 | gpaste-client
 
 ctrl + shift + v
