@@ -8,5 +8,7 @@ pasystray -m 200 -i 5 --include-monitors -g -N all &
 
 sxhkd &
 
+clipcatd
+
 # for barrier and xdotool to work right
 setxkbmap

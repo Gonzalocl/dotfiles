@@ -87,6 +87,8 @@ rhythmbox
 transmission-gtk
 patchutils
 xorg-xkill
+rofi
+clipcat
 
 # AUR
 google-chrome
