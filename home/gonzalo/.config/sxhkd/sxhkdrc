@@ -19,5 +19,8 @@ super + d
 super + shift + d
     datetime_format | head -c -1 | gpaste-client
 
-super + v
+ctrl + shift + v
     gpaste-client ui
+
+ctrl + shift + v + Left
+    gpaste-client --use-index select 1
