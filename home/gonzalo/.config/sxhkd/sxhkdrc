@@ -18,6 +18,3 @@ super + d
 
 super + shift + d
     datetime_format | xclip -i -r -selection clipboard && xte "keyup d" "keydown Control_L" "key v" "keyup Control_L"
-
-super + v
-    clipcat-menu
