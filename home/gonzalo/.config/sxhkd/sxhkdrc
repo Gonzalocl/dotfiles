@@ -13,11 +13,8 @@ super + shift + a
 super + l
     slock
 
-super + d
-    date_format | head -c -1 | gpaste-client
-
-super + shift + d
-    datetime_format | head -c -1 | gpaste-client
+super {_, shift + } d
+    {date_format, datetime_format} | head -c -1 | gpaste-client
 
 ctrl + shift + v
     gpaste-client ui
