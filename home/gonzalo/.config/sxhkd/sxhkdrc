@@ -15,6 +15,3 @@ super + {_, shift + } d
 
 ctrl + shift + v
     gpaste-client ui
-
-ctrl + shift + v + Left
-    gpaste-client --use-index select 1
