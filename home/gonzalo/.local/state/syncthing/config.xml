@@ -10,8 +10,10 @@
         <remoteGUIPort>0</remoteGUIPort>
         <numConnections>0</numConnections>
     </device>
-    <gui enabled="true" tls="false" debugging="false" sendBasicAuthPrompt="false">
+    <gui enabled="true" tls="true" debugging="false" sendBasicAuthPrompt="false">
         <address>127.0.0.1:8384</address>
+        <user>gonzalo</user>
+        <password>{{ env.syncthing_gui_password }}</password>
         <apikey>{{ env.syncthing_apikey }}</apikey>
         <theme>default</theme>
     </gui>
@@ -19,17 +21,17 @@
     <options>
         <listenAddress>default</listenAddress>
         <globalAnnounceServer>default</globalAnnounceServer>
-        <globalAnnounceEnabled>true</globalAnnounceEnabled>
+        <globalAnnounceEnabled>false</globalAnnounceEnabled>
         <localAnnounceEnabled>true</localAnnounceEnabled>
         <localAnnouncePort>21027</localAnnouncePort>
         <localAnnounceMCAddr>[ff12::8384]:21027</localAnnounceMCAddr>
         <maxSendKbps>0</maxSendKbps>
         <maxRecvKbps>0</maxRecvKbps>
         <reconnectionIntervalS>60</reconnectionIntervalS>
-        <relaysEnabled>true</relaysEnabled>
+        <relaysEnabled>false</relaysEnabled>
         <relayReconnectIntervalM>10</relayReconnectIntervalM>
         <startBrowser>true</startBrowser>
-        <natEnabled>true</natEnabled>
+        <natEnabled>false</natEnabled>
         <natLeaseMinutes>60</natLeaseMinutes>
         <natRenewalMinutes>30</natRenewalMinutes>
         <natTimeoutSeconds>10</natTimeoutSeconds>
