@@ -14,7 +14,7 @@ file:///home/gonzalo/Games Games
 file:///home/gonzalo/ws ws
 sftp://white/home/gonzalo white
 sftp://black/home/gonzalo black
-ftp://redminote8t-green:2221/ green
+sftp://u0_a450@redmi-note-8t:8022/data/data/com.termux/files/home green
 sftp://red/home/gonzalo red
 ftp://192.168.1.11/ ps3
 sftp://lp323-gcaparros/home/gonzalo lp323-gcaparros
