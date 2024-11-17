@@ -1,3 +1,10 @@
 #!/bin/sh
 
+pkg upgrade
 pkg install $(cat "$HOME/.local/share/dotfiles/packages")
+passwd -d
+ssh-keygen
+cat "$HOME/storage/shared/id_ed25519.pub" >> "$HOME/.ssh/authorized_keys"
+cp "$PREFIX/etc/ssh/ssh_host_ed25519_key.pub" "$HOME/storage/shared/"
+chsh -s zsh
+yadm remote set-url origin "git@github.com:Gonzalocl/dotfiles.git"
