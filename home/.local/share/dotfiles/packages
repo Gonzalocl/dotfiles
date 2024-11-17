@@ -1,3 +1,9 @@
-openssh
-vim
+git
 yadm
+zsh
+zsh-completions
+man
+vim
+openssh
+termux-api
+file
