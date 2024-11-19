@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if sshd -D; then
+    termux-toast "sshd stopped ($?)"
+else
+    pkill sshd
+fi
