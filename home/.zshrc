@@ -10,3 +10,7 @@ zstyle :compinstall filename '/data/data/com.termux/files/home/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+alias ll="ls -lah"
+alias grep="grep --color"
+alias diff="diff --color"
