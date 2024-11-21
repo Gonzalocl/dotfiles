@@ -2,7 +2,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=20000
 SAVEHIST=20000
-bindkey -v
+bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/data/data/com.termux/files/home/.zshrc'
