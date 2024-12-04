@@ -1,0 +1,10 @@
+#!/bin/bash
+
+link_name="/home/gonzalo/.config/yadm/alt$(realpath "$1")##t"
+
+mkdir -p "$(dirname "$link_name")"
+
+ln -srf "$1" "$link_name"
+
+# TODO
+YADM_END_RECURSION=1 yadm --yadm-dir /home/gonzalo/.config/yadm --yadm-data /home/gonzalo/.local/share/yadm add "$link_name"
