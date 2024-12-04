@@ -18,6 +18,7 @@
 0755 gonzalo gonzalo 'home/gonzalo/bin/meld-diff-patch'
 0755 gonzalo gonzalo 'home/gonzalo/bin/nemo'
 0755 gonzalo gonzalo 'home/gonzalo/bin/sysyadm'
+0755 gonzalo gonzalo 'home/gonzalo/bin/yadm_alt_add'
 0755 gonzalo gonzalo 'home/gonzalo/bin/yadm_store_file_permissions'
 0700 gonzalo gonzalo 'home/gonzalo/.config'
 0755 gonzalo gonzalo 'home/gonzalo/.config/awesome'
