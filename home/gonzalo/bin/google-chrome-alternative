@@ -1,0 +1,7 @@
+#!/bin/sh
+
+google_chrome_profile="$(basename "$0")"
+
+google-chrome-stable --user-data-dir="$HOME/.config/$google_chrome_profile" "$@" &
+
+#chrome://version
