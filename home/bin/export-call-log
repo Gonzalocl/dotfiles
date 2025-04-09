@@ -1,0 +1,3 @@
+#ª/bin/sh
+
+termux-call-log -l 1000000
