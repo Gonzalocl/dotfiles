@@ -8,7 +8,7 @@ pkg upgrade
 termux-setup-storage
 read -p "Continue?"
 pkg install yadm
-yadm clone -w /data/data/com.termux/files/ -b green --bootstrap https://github.com/Gonzalocl/dotfiles.git
+yadm clone -w / -b green --bootstrap https://github.com/Gonzalocl/dotfiles.git
 ```
 
 
