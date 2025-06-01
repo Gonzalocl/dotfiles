@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find . -maxdepth 4 -iname "*$1*" | LC_ALL=C sort | grep --ignore-case --color "$1"
