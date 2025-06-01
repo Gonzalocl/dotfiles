@@ -2,5 +2,5 @@
 
 new_random_string=$(dd if=/dev/urandom bs=32 count=1 status=none | hexdump --no-squeezing --format '1/1 "%02x"')
 echo "New random string generated: [$new_random_string]"
-xclip -in <<< "$new_random_string"
+xclip -rmlastnl -in <<< "$new_random_string"
 echo Random string generated copied to clipboard
