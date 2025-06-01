@@ -2,7 +2,7 @@
 
 # $1 = port
 
-ss -lpt "sport = :$1"
+ss --listening --processes --tcp "sport = :$1"
 
 # Other commands:
 #netstat -lpn | grep ":$1"
