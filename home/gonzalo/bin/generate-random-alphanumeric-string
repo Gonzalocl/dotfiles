@@ -1,0 +1,6 @@
+#!/bin/bash
+
+new_random_string=$(dd if=/dev/urandom bs=32 count=1 status=none | hexdump -v -e '1/1 "%02x"')
+echo "New random string generated: [$new_random_string]"
+xclip -i <<< "$new_random_string"
+echo Random string generated copied to clipboard
