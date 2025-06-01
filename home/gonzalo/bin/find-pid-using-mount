@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# $1 = mount
+
+lsof "$1"
+
+# Other commands:
+#fuser "$1"
+
+# https://stackoverflow.com/questions/38343625/how-to-get-pids-using-a-mount-point-before-removed-by-udev-on-plug-out
+
+# Test
+#dd if=/dev/zero of=blocks count=102400
+#mkdir mnt
+#mkfs.ext4 blocks
+#sudo mount blocks mnt/
+#sudo umount mnt
