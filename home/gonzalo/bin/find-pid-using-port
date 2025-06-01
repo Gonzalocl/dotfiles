@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# $1 = port
+
+ss -lpt "sport = :$1"
+
+# Other commands:
+#netstat -lpn | grep ":$1"
+#lsof -n -i ":$1"
+
+# https://unix.stackexchange.com/questions/106561/finding-the-pid-of-the-process-using-a-specific-port
