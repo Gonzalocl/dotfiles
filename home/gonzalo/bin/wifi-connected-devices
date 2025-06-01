@@ -1,0 +1,3 @@
+#!/bin/sh
+
+arp --device wlp0s20f3
