@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Play Motion Photo Video
+GenericName=Multimedia player
+Comment=Play video in jpg Motion Photo Video Exif tag
+Icon=mpv
+Exec=play-motion-photo-video %U
+Terminal=false
+Categories=AudioVideo;Audio;Video;Player;
+MimeType=image/jpeg;
+Keywords=media;player;video;

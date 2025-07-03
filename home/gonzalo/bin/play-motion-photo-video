@@ -1,0 +1,22 @@
+#!/bin/sh
+
+play_media() {
+    mpv --loop "$1"
+}
+
+input_file="$1"
+
+# shellcheck disable=SC2016
+if ! exiftool -if '$MotionPhotoVideo' "$input_file"; then
+    notify-send "File $input_file doesn't have 'Motion Photo Video' Exif tag."
+    play_media "$input_file"
+    exit
+fi
+
+tmp_file="$(mktemp)"
+
+exiftool -binary -MotionPhotoVideo "$input_file" >"$tmp_file"
+
+play_media "$tmp_file"
+
+rm "$tmp_file"
