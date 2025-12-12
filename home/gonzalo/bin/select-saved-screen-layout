@@ -1,0 +1,8 @@
+#!/bin/sh
+
+saved_layout_directory="${HOME}/.screenlayout"
+
+find "${saved_layout_directory}" -maxdepth 1 -type f -name '*.sh' -printf '%f\0' |
+    sed --null-data 's/\.sh$//' |
+    xargs --null yad --title "Select Saved Screen Layout" --window-icon display --list --separator= --column Layout |
+    xargs --no-run-if-empty -I {} bash "${saved_layout_directory}/{}.sh"
